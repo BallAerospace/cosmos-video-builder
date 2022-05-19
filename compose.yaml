@@ -1,0 +1,21 @@
+version: "3.5"
+
+services:
+
+  video-redis:
+    image: "ballaerospace/video-redis"
+    build:
+      context: "video-redis"
+    ports:
+      - "127.0.0.1:6379:6379"
+    restart: "unless-stopped"
+
+  video-builder:
+    image: "ballaerospace/video-builder"
+    build:
+      context: "video-builder"
+    ports:
+      - "127.0.0.1:1935:1935"
+    restart: "unless-stopped"
+    env_file:
+      - ".env"
