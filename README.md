@@ -1,6 +1,6 @@
 # COSMOS video builder
 
-Check out [this gist](https://gist.github.com/ryan-pratt-ball/18f4c69a96c2c88780211ec3848e52b4) to see how this fits into an end-to-end video streaming demo in COSMOS 5.
+Check out [this gist](https://gist.github.com/ryan-pratt/d364a65677874d04a674c46b171113aa) to see how this fits into an end-to-end video streaming demo in COSMOS 5.
 
 The purpose of this service is to encode a stream of raw pixel values into a video stream that can be consumed by the COSMOS HLS transcoder microservice. Ideally, it will run as close as possible to the source of the pixel data as to take advantage of video compression for network transport. As such, this is standalone and not a part of COSMOS itself, unlike the [HLS transcoder](https://github.com/BallAerospace/cosmosc2-hls).
 
